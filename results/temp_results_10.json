@@ -1,0 +1,82 @@
+[
+  {
+    "file": "hindi_000.wav",
+    "language": "Hindi (hin)",
+    "transcription": "ab rampur me aciles bate ge laptop ka lolipop",
+    "confidence": "low",
+    "reasoning": "Both ASR systems failed to produce valid transcriptions. The Zero-Shot ASR produced some hypotheses but none were validated as correct. I chose the most common hypothesis as a tentative transcription due to the lack of better options.<|im_end|>",
+    "success": true
+  },
+  {
+    "file": "hindi_001.wav",
+    "language": "Hindi (hin)",
+    "transcription": "flipcard bember ofer ke sat big rha h lenavo ka ye shandar smartfone",
+    "confidence": "high",
+    "reasoning": "Both ASR systems were used, with the Whisper ASR failing. The Zero-Shot ASR provided two hypotheses, one of which had a higher number of validated words compared to the other. Given the available data, this transcription is deemed the most reliable.<|im_end|>",
+    "success": true
+  },
+  {
+    "file": "hindi_002.wav",
+    "language": "Urdu (ur)",
+    "transcription": "min msibt min prr gyeye",
+    "confidence": "medium",
+    "reasoning": "The initial transcription from Whisper ASR (\"min msibt min prr gyeye\") had a lower confidence but passed the word validation. The Zero-shot ASR returned an invalid transcription, so the Whisper ASR's transcription is chosen as the most reliable option.<|im_end|>",
+    "success": true
+  },
+  {
+    "file": "hindi_003.wav",
+    "language": "hindi (hi)",
+    "transcription": "susil modi h afwamia bigr cuka h - mansi snpuln tdstiag",
+    "confidence": "medium",
+    "reasoning": "The `call_zeroshot_asr` output had better coherence and all words were found to be valid. While `call_whisper` provided a transcription, it contained invalid words, leading to its rejection.<|im_end|>",
+    "success": true
+  },
+  {
+    "file": "hindi_004.wav",
+    "language": "Hindi (hin)",
+    "transcription": "pscm bngal me mslm arxn ko bajpa dgi cnwti",
+    "confidence": "medium",
+    "reasoning": "Both ASR systems had issues with accuracy. The second hypothesis had a slightly higher score and no invalid words, making it the best choice despite the low confidence.<|im_end|>",
+    "success": true
+  },
+  {
+    "file": "hindi_005.wav",
+    "language": "Hindi (hi)",
+    "transcription": "paakistaa nikalaagaar vale aacche huum, likin desh pahal hai, aap aap vaaddii nii.",
+    "confidence": "medium",
+    "reasoning": "The Whisper ASR provided the more coherent and contextually plausible transcription. Although the confidence is medium due to the low scores from the comparison, the recommendation from the comparison tool suggests transcription2 as the better option.<|im_end|>",
+    "success": true
+  },
+  {
+    "file": "hindi_006.wav",
+    "language": "hindi (hi)",
+    "transcription": "naaiijiiriyaa skuul hamnaa yem milindra mutinya ke prattmaag khevemdaa",
+    "confidence": "medium",
+    "reasoning": "The Whisper ASR provided a more coherent and validated transcription despite the low confidence score.<|im_end|>",
+    "success": true
+  },
+  {
+    "file": "hindi_007.wav",
+    "language": "ur (urdu)",
+    "transcription": "me tm tmre jog k st md krn t",
+    "confidence": "medium",
+    "reasoning": "While the Whisper ASR provided a more detailed and potentially accurate transcription, the validation failed for all words. The Zero-Shot ASR provided plausible alternatives but did not validate as well. Therefore, we choose the Zero-Shot ASR transcription with the understanding that it needs further review.<|im_end|>",
+    "success": true
+  },
+  {
+    "file": "hindi_008.wav",
+    "language": "Hindi (hin)",
+    "transcription": "mujhe lakhataa hai ki aapako kaulej jaanaa jaanaa jaaiie",
+    "confidence": "high",
+    "reasoning": "The Whisper ASR transcription was more accurate and had a higher score, indicating a better match with the expected meaning. The presence of valid words also supports the confidence in this transcription.<|im_end|>",
+    "success": true
+  },
+  {
+    "file": "hindi_009.wav",
+    "language": "Marathi (mar)",
+    "transcription": "wipxi dlon mn qala divs",
+    "confidence": "low",
+    "reasoning": "Both ASR systems returned low confidence scores and no valid words. The second hypothesis from the Zero-Shot ASR is chosen due to its slight advantage over the other two hypotheses.<|im_end|>",
+    "success": true
+  }
+]

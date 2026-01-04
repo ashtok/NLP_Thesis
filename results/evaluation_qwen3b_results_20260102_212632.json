@@ -1,0 +1,512 @@
+{
+  "summary": {
+    "average_wer": 98.8004662004662,
+    "average_cer": 69.84421766922561,
+    "files_evaluated": 50,
+    "total_files": 50,
+    "missing_ground_truth": [],
+    "device_used": "cpu"
+  },
+  "per_file_metrics": [
+    {
+      "file": "hindi_000.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "अब रामपुर में अखिलेश बांटेंगे लैपटॉप का 'लॉलीपॉप'",
+      "reference_romanized": "ab raamapur mem akhilesh baamttemge laipattop kaa loliipop",
+      "hypothesis": "",
+      "ref_words": 8,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_001.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "Flipkart: बंपर ऑफर्स के साथ बिक रहा है Lenovo का ये शानदार स्मार्टफोन",
+      "reference_romanized": "flipkart bampar opharsa ke saath bik rahaa hai lenovo kaa ye shaanadaar smaarttaphon",
+      "hypothesis": "",
+      "ref_words": 13,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_002.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "मैं मुसीबत में पड़ गया।",
+      "reference_romanized": "maim musiibat mem padd gayaa",
+      "hypothesis": "",
+      "ref_words": 5,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_003.wav",
+      "wer": 100.0,
+      "cer": 46.42857142857143,
+      "reference_original": "सुशील मोदी है 'अफवाह मियां', बिगड़ चुका है मानसिक संतुलन: तेजस्वी यादव",
+      "reference_romanized": "sushiil modii hai aphavaah miyaam bigadd cukaa hai maanasik samtulan tejasvii yaadav",
+      "hypothesis": "susil modi h afwamia bigr cuka h mansi snpuln tdstiag",
+      "ref_words": 12,
+      "hyp_words": 10
+    },
+    {
+      "file": "hindi_004.wav",
+      "wer": 88.88888888888889,
+      "cer": 45.0,
+      "reference_original": "प. बंगाल में मुस्लिम आरक्षण को भाजपा देगी चुनौती",
+      "reference_romanized": "pa bamgaal mem muslim aarakssann ko bhaajapaa degii cunautii",
+      "hypothesis": "pscm bngal me mslm arxn ko bajpa dg cnwti",
+      "ref_words": 9,
+      "hyp_words": 9
+    },
+    {
+      "file": "hindi_005.wav",
+      "wer": 90.9090909090909,
+      "cer": 42.66666666666667,
+      "reference_original": "पाकिस्तानी कलाकार भले अच्छे हों, लेकिन देश पहले है: हेमा मालिनी",
+      "reference_romanized": "paakistaanii kalaakaar bhale acche hom lekin desh pahale hai hemaa maalinii",
+      "hypothesis": "pakistani clagar vle s ho lekin des pe em malidi",
+      "ref_words": 11,
+      "hyp_words": 10
+    },
+    {
+      "file": "hindi_006.wav",
+      "wer": 100.0,
+      "cer": 54.666666666666664,
+      "reference_original": "नाइजीरिया स्कूल हमला: पीएम नरेंद्र मोदी ने की घटना की निंदा",
+      "reference_romanized": "naaijiiriyaa skuul hamalaa piiem naremdra modii ne kii ghattanaa kii nimdaa",
+      "hypothesis": "nisri skl hmla p m ndr m tin ki kpmki nda",
+      "ref_words": 11,
+      "hyp_words": 11
+    },
+    {
+      "file": "hindi_007.wav",
+      "wer": 100.0,
+      "cer": 62.68656716417911,
+      "reference_original": "मैं तुम्हें तुम्हारे होमवर्क के साथ मदद करना चाहता हूँ।",
+      "reference_romanized": "maim tumhem tumhaare homavarka ke saath madad karanaa caahataa huum",
+      "hypothesis": "me tm tmre jog k st md krn t",
+      "ref_words": 10,
+      "hyp_words": 9
+    },
+    {
+      "file": "hindi_008.wav",
+      "wer": 100.0,
+      "cer": 56.25,
+      "reference_original": "मुझे लगता है कि आपको कॉलेज जाना चाहिये।",
+      "reference_romanized": "mujhe lagataa hai ki aapako kolej jaanaa caahiye",
+      "hypothesis": "mj lgt ki p k colj jn i",
+      "ref_words": 8,
+      "hyp_words": 8
+    },
+    {
+      "file": "hindi_009.wav",
+      "wer": 100.0,
+      "cer": 52.5,
+      "reference_original": "विपक्षी दलों ने मनाया काला दिवस",
+      "reference_romanized": "vipakssii dalom ne manaayaa kaalaa divas",
+      "hypothesis": "wipxi dlon mn qala diws",
+      "ref_words": 6,
+      "hyp_words": 5
+    },
+    {
+      "file": "hindi_010.wav",
+      "wer": 100.0,
+      "cer": 38.88888888888889,
+      "reference_original": "वह मेरी चूत है।",
+      "reference_romanized": "vah merii cuut hai",
+      "hypothesis": "ya mere cut h",
+      "ref_words": 4,
+      "hyp_words": 4
+    },
+    {
+      "file": "hindi_011.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "Box office का नया हीरो बना हॉरर, 'लैला मजनू', 'पलटन' पीछे",
+      "reference_romanized": "box office kaa nayaa hiiro banaa horar lailaa majanuu palattan piiche",
+      "hypothesis": "",
+      "ref_words": 11,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_012.wav",
+      "wer": 100.0,
+      "cer": 62.96296296296296,
+      "reference_original": "मैं उठना चाहती हूँ।",
+      "reference_romanized": "maim utthanaa caahatii huum",
+      "hypothesis": "me utn ct u",
+      "ref_words": 4,
+      "hyp_words": 4
+    },
+    {
+      "file": "hindi_013.wav",
+      "wer": 100.0,
+      "cer": 42.391304347826086,
+      "reference_original": "लाल बहादुर शास्त्री की डेथ मिस्ट्री पर फिल्म, इस रोल में दिखेंगे नसीरुद्दीन शाह",
+      "reference_romanized": "laal bahaadur shaastrii kii ddeth misttrii par philma is rol mem dikhemge nasiiruddiin shaah",
+      "hypothesis": "lalawado sashtrī ke death wisreper film is role me dikenge nasuri tin sa",
+      "ref_words": 14,
+      "hyp_words": 13
+    },
+    {
+      "file": "hindi_014.wav",
+      "wer": 76.92307692307693,
+      "cer": 44.5945945945946,
+      "reference_original": "...तो लंदन में एक ही दिन दो मैदानों पर भिड़ेंगे भारत और पाकिस्तान",
+      "reference_romanized": "to lamdan mem ek hii din do maidaanom par bhiddemge bhaarat aur paakistaan",
+      "hypothesis": "to lndn me ek dn do midno pr bdg b d pkstan",
+      "ref_words": 13,
+      "hyp_words": 12
+    },
+    {
+      "file": "hindi_015.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "Opinion: विराट कोहली के लिए बेहतरीन मौका",
+      "reference_romanized": "opinion viraatt kohalii ke lie behatariin maukaa",
+      "hypothesis": "",
+      "ref_words": 7,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_016.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "जयललिता बायोपिक से कंगना का लुक आउट, सोशल मीडिया पर हो गईं ट्रोल",
+      "reference_romanized": "jayalalitaa baayopik se kamganaa kaa luk aautt soshal miiddiyaa par ho gaiim ttrol",
+      "hypothesis": "",
+      "ref_words": 13,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_017.wav",
+      "wer": 100.0,
+      "cer": 37.2093023255814,
+      "reference_original": "प्रेग्नेंट करीना की तबीयत बिगड़ी, घबराए सैफ ने रात में बुलाया नर्स को",
+      "reference_romanized": "pregnemtt kariinaa kii tabiiyat bigaddii ghabaraae saiph ne raat mem bulaayaa narsa ko",
+      "hypothesis": "pregnant qrina ki tbit bigdi gbrai sf n rat me bulaya nrs co",
+      "ref_words": 13,
+      "hyp_words": 13
+    },
+    {
+      "file": "hindi_018.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "तुम्हारे बहुत सारे दुशमन हैं।",
+      "reference_romanized": "tumhaare bahut saare dushaman haim",
+      "hypothesis": "",
+      "ref_words": 5,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_019.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "ब्रेस्ट कैंसर की जागरूकता के लिए है पिंक रिबन ब्रा...",
+      "reference_romanized": "brestta kaimsar kii jaagaruukataa ke lie hai pimk riban braa",
+      "hypothesis": "",
+      "ref_words": 10,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_020.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "यूपी: योगी सरकार के खिलाफ बीजेपी विधायकों का धरना खत्म, लेकिन दी ये चेतावनी",
+      "reference_romanized": "yuupii yogii sarakaar ke khilaaph biijepii vidhaayakom kaa dharanaa khatma lekin dii ye cetaavanii",
+      "hypothesis": "",
+      "ref_words": 14,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_021.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "तोहफे के रूप में लोगों की पहली पंसद है चॉकलेट",
+      "reference_romanized": "tohaphe ke ruup mem logom kii pahalii pamsad hai cokalett",
+      "hypothesis": "",
+      "ref_words": 10,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_022.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "मारुति का अब डीजल कारों पर रहेगा जोर",
+      "reference_romanized": "maaruti kaa ab ddiijal kaarom par rahegaa jor",
+      "hypothesis": "",
+      "ref_words": 8,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_023.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "एवेंजर्स एंडगेम Review: हर कसौटी पर खरी उतरती है सुपरहीरोज की फिल्म",
+      "reference_romanized": "evemjarsa emddagem review har kasauttii par kharii utaratii hai suparahiiroj kii philma",
+      "hypothesis": "",
+      "ref_words": 12,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_024.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "बिना सोचे कुछ मत कहना।",
+      "reference_romanized": "binaa soce kuch mat kahanaa",
+      "hypothesis": "",
+      "ref_words": 5,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_025.wav",
+      "wer": 120.0,
+      "cer": 51.515151515151516,
+      "reference_original": "उपहार कांड: इंसाफ से इनकार",
+      "reference_romanized": "upahaar kaamdd imsaaph se inakaar",
+      "hypothesis": "uphar cand in safsay in car",
+      "ref_words": 5,
+      "hyp_words": 6
+    },
+    {
+      "file": "hindi_026.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "दिल्ली के उपराज्यपाल ने पुलिस प्रमुख को हटाने की मांग खारिज की",
+      "reference_romanized": "dillii ke uparaajyapaal ne pulis pramukh ko hattaane kii maamg khaarij kii",
+      "hypothesis": "",
+      "ref_words": 12,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_027.wav",
+      "wer": 83.33333333333334,
+      "cer": 46.15384615384615,
+      "reference_original": "वे एक-साथ खेल रहे हैं।",
+      "reference_romanized": "ve ek saath khel rahe haim",
+      "hypothesis": "we ek st kel rh",
+      "ref_words": 6,
+      "hyp_words": 5
+    },
+    {
+      "file": "hindi_028.wav",
+      "wer": 88.88888888888889,
+      "cer": 44.0,
+      "reference_original": "क्या मैं अभी तुम्हारे लिए कुछ कर सकती हूं?",
+      "reference_romanized": "kyaa maim abhii tumhaare lie kuch kar sakatii huum",
+      "hypothesis": "ky my b tmhr lie kch kr skt h",
+      "ref_words": 9,
+      "hyp_words": 9
+    },
+    {
+      "file": "hindi_029.wav",
+      "wer": 90.9090909090909,
+      "cer": 30.88235294117647,
+      "reference_original": "मोरारी बापू ने भी माना, मोदी सरकार का ग्राफ नीचे आया",
+      "reference_romanized": "moraarii baapuu ne bhii maanaa modii sarakaar kaa graaph niice aayaa",
+      "hypothesis": "murari babu ne bi mana modi srkar ka graf nice aya",
+      "ref_words": 11,
+      "hyp_words": 11
+    },
+    {
+      "file": "hindi_030.wav",
+      "wer": 120.0,
+      "cer": 52.94117647058824,
+      "reference_original": "इस सिम से मिलेगी दुनियाभर में अनलिमिटेड WhatsApp की आजादी",
+      "reference_romanized": "is sim se milegii duniyaabhar mem analimittedd whatsapp kii aajaadii",
+      "hypothesis": "s sm s ml g dny brm n lmtd wtsp k zd",
+      "ref_words": 10,
+      "hyp_words": 12
+    },
+    {
+      "file": "hindi_031.wav",
+      "wer": 100.0,
+      "cer": 50.0,
+      "reference_original": "नक़्शा कहाँ है?",
+      "reference_romanized": "naqshaa kahaam hai",
+      "hypothesis": "nxsa kha h",
+      "ref_words": 3,
+      "hyp_words": 3
+    },
+    {
+      "file": "hindi_032.wav",
+      "wer": 100.0,
+      "cer": 52.38095238095239,
+      "reference_original": "सरकार को खतरा नहीं: पी. चिदंबरम",
+      "reference_romanized": "sarakaar ko khataraa nahiim pii cidambaram",
+      "hypothesis": "sbcar gu ta nhi pinc lmbaran",
+      "ref_words": 6,
+      "hyp_words": 6
+    },
+    {
+      "file": "hindi_033.wav",
+      "wer": 116.66666666666667,
+      "cer": 37.83783783783784,
+      "reference_original": "शादी से पहले नर्वस हैं शिल्पा",
+      "reference_romanized": "shaadii se pahale narvas haim shilpaa",
+      "hypothesis": "sadi s phle nr ws h shlpa",
+      "ref_words": 6,
+      "hyp_words": 7
+    },
+    {
+      "file": "hindi_034.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "सावन का तीसरा सोमवार और शिव जी के तीन स्वरूप",
+      "reference_romanized": "saavan kaa tiisaraa somavaar aur shiv jii ke tiin svaruup",
+      "hypothesis": "",
+      "ref_words": 10,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_035.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "छत्तीसगढ़ः परिवारवाद के मुद्दे पर कांग्रेस के अंदर ही मचा घमासान",
+      "reference_romanized": "chattiisagaddhah parivaaravaad ke mudde par kaamgres ke amdar hii macaa ghamaasaan",
+      "hypothesis": "",
+      "ref_words": 11,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_036.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "फैक्ट चेक: क्या उर्मिला मातोंडकर ने पीएम मोदी को कहा मानसिक रूप से बीमार?",
+      "reference_romanized": "phaiktta cek kyaa urmilaa maatomddakar ne piiem modii ko kahaa maanasik ruup se biimaar",
+      "hypothesis": "",
+      "ref_words": 14,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_037.wav",
+      "wer": 100.0,
+      "cer": 42.5,
+      "reference_original": "विक्की कौशल नहीं, राकेश शर्मा की बायोपिक में दिखेंगे रणबीर कपूर!",
+      "reference_romanized": "vikkii kaushal nahiim raakesh sharmaa kii baayopik mem dikhemge rannabiir kapuur",
+      "hypothesis": "viki cosl nhi raqe srma ki biopric me dikeg rnbir cpur",
+      "ref_words": 11,
+      "hyp_words": 11
+    },
+    {
+      "file": "hindi_038.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "गाजियाबाद: लड़की की मिली लाश, रेप की आशंका",
+      "reference_romanized": "gaajiyaabaad laddakii kii milii laash rep kii aashamkaa",
+      "hypothesis": "",
+      "ref_words": 8,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_039.wav",
+      "wer": 90.0,
+      "cer": 37.142857142857146,
+      "reference_original": "चेन्नईः महिलाओं की सुरक्षा को लेकर रेलवे का ढ़ीला रवैया",
+      "reference_romanized": "cennaiih mahilaaom kii surakssaa ko lekar relave kaa ddhiilaa ravaiyaa",
+      "hypothesis": "cini mhilao ki surxa ko lekr relwe ka dhila rwia",
+      "ref_words": 10,
+      "hyp_words": 10
+    },
+    {
+      "file": "hindi_040.wav",
+      "wer": 100.0,
+      "cer": 45.0,
+      "reference_original": "मॉनसून ने दी कई स्थानों पर दस्तक",
+      "reference_romanized": "monasuun ne dii kaii sthaanom par dastak",
+      "hypothesis": "mns n d ki stnw pr dstk",
+      "ref_words": 7,
+      "hyp_words": 7
+    },
+    {
+      "file": "hindi_041.wav",
+      "wer": 88.88888888888889,
+      "cer": 47.368421052631575,
+      "reference_original": "गुड़गांवः ट्रैफिक लाइट ने बचाई सॉफ्टवेयर इंजीनियर की आबरू",
+      "reference_romanized": "guddagaamvah ttraiphik laaitt ne bacaaii sophttaveyar imjiiniyar kii aabaruu",
+      "hypothesis": "gudgao trafic lait ne bacai software engenir qi agru",
+      "ref_words": 9,
+      "hyp_words": 9
+    },
+    {
+      "file": "hindi_042.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "राहुल गांधी ने पूरा किया अमेठी के किसानों से किया वादा, भेजा खास गिफ्ट",
+      "reference_romanized": "raahul gaamdhii ne puuraa kiyaa ametthii ke kisaanom se kiyaa vaadaa bhejaa khaas giphtta",
+      "hypothesis": "",
+      "ref_words": 14,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_043.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "मैं पहुँचते ही तुम्हें फ़ोन करूँगी।",
+      "reference_romanized": "maim pahumcate hii tumhem fon karuumgii",
+      "hypothesis": "",
+      "ref_words": 6,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_044.wav",
+      "wer": 100.0,
+      "cer": 36.666666666666664,
+      "reference_original": "पत्र किसको लिखा गया था?",
+      "reference_romanized": "patra kisako likhaa gayaa thaa",
+      "hypothesis": "ptr isko lika gy ta",
+      "ref_words": 5,
+      "hyp_words": 5
+    },
+    {
+      "file": "hindi_045.wav",
+      "wer": 100.0,
+      "cer": 63.1578947368421,
+      "reference_original": "मैं भारत से हुँ",
+      "reference_romanized": "maim bhaarat se hum",
+      "hypothesis": "me bard bern",
+      "ref_words": 4,
+      "hyp_words": 3
+    },
+    {
+      "file": "hindi_046.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "संजू का नया पोस्टर रिलीज, मान्यता दत्त के किरदार में नजर आईं दिया मिर्जा",
+      "reference_romanized": "samjuu kaa nayaa posttar riliij maanyataa datta ke kiradaar mem najar aaiim diyaa mirjaa",
+      "hypothesis": "",
+      "ref_words": 14,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_047.wav",
+      "wer": 100.0,
+      "cer": 100.0,
+      "reference_original": "राष्ट्रपति चुनाव के उम्मीदवार को लेकर असमंजस में है विपक्ष",
+      "reference_romanized": "raassttrapati cunaav ke ummiidavaar ko lekar asamamjas mem hai vipakssa",
+      "hypothesis": "",
+      "ref_words": 10,
+      "hyp_words": 0
+    },
+    {
+      "file": "hindi_048.wav",
+      "wer": 100.0,
+      "cer": 34.61538461538461,
+      "reference_original": "उसके हात-पैर लंबे हैं।",
+      "reference_romanized": "usake haat pair lambe haim",
+      "hypothesis": "uske ht pyr lmbe he",
+      "ref_words": 5,
+      "hyp_words": 5
+    },
+    {
+      "file": "hindi_049.wav",
+      "wer": 84.61538461538461,
+      "cer": 33.80281690140845,
+      "reference_original": "भाभी ने झूठ बोला तो पत्नी पर पेट्रोल डाल कर लगा दी आग",
+      "reference_romanized": "bhaabhii ne jhuutth bolaa to patnii par pettrol ddaal kar lagaa dii aag",
+      "hypothesis": "babi ne jut bola to ptni pr petrol dal lgadi ag",
+      "ref_words": 13,
+      "hyp_words": 11
+    }
+  ]
+}

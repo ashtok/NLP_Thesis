@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "total_samples": 5,
+    "successful": 5,
+    "failed": 0,
+    "average_confidence": 0.9463368654251099
+  },
+  "results": [
+    {
+      "audio_file": "hindi_013.wav",
+      "duration": 7.956,
+      "ground_truth": "लाल बहादुर शास्त्री की डेथ मिस्ट्री पर फिल्म, इस रोल में दिखेंगे नसीरुद्दीन शाह",
+      "romanized_prediction": "lalwado sasty ke deth wisreper film is role me dikenge nasuri tin sa",
+      "confidence": 0.9472423791885376,
+      "status": "success"
+    },
+    {
+      "audio_file": "hindi_039.wav",
+      "duration": 6.48,
+      "ground_truth": "चेन्नईः महिलाओं की सुरक्षा को लेकर रेलवे का ढ़ीला रवैया",
+      "romanized_prediction": "cinni mhilao ki surxxa ko lekr relwe ka dhila rwia",
+      "confidence": 0.9720702767372131,
+      "status": "success"
+    },
+    {
+      "audio_file": "hindi_030.wav",
+      "duration": 4.968,
+      "ground_truth": "इस सिम से मिलेगी दुनियाभर में अनलिमिटेड WhatsApp की आजादी",
+      "romanized_prediction": "s sm s ml g dny brm n lmtd wtsp k zd",
+      "confidence": 0.9400537014007568,
+      "status": "success"
+    },
+    {
+      "audio_file": "hindi_045.wav",
+      "duration": 2.268,
+      "ground_truth": "मैं भारत से हुँ",
+      "romanized_prediction": "me bard bern",
+      "confidence": 0.9148231148719788,
+      "status": "success"
+    },
+    {
+      "audio_file": "hindi_017.wav",
+      "duration": 6.588,
+      "ground_truth": "प्रेग्नेंट करीना की तबीयत बिगड़ी, घबराए सैफ ने रात में बुलाया नर्स को",
+      "romanized_prediction": "pregnent qrina ki tbi bigdi gbrai sf n rat me bulaya nrs co",
+      "confidence": 0.957494854927063,
+      "status": "success"
+    }
+  ]
+}

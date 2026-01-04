@@ -1,0 +1,502 @@
+[
+  {
+    "id": 0,
+    "audio_file": "hindi_000.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_000.wav",
+    "transcription": "अब रामपुर में अखिलेश बांटेंगे लैपटॉप का 'लॉलीपॉप'",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "0a0db76f30e3d011216425efa204fa0d3064767656b913c1a15964ff4d3409d95a04609ab2c57d21c7ae225ce115dbc38160c92974e7194071f4af178f4ea762",
+    "duration": 8.1
+  },
+  {
+    "id": 1,
+    "audio_file": "hindi_001.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_001.wav",
+    "transcription": "Flipkart: बंपर ऑफर्स के साथ बिक रहा है Lenovo का ये शानदार स्मार्टफोन",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "0a83baf2d66baec284d04967be435be6e6678285ac85d5895ecd2e885f56479efae9ede6d9df894ccbe7a06ec0db9296bb48415ab9e484400d2abab0a11d48b1",
+    "duration": 7.92
+  },
+  {
+    "id": 2,
+    "audio_file": "hindi_002.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_002.wav",
+    "transcription": "मैं मुसीबत में पड़ गया।",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "0b0be66321658747b6942ac54496bcf15f205ec5468184dbc0f65a4cb4b175d240d39625f77f45537b8108cebca77574e09be59da116602782a75d1fae832a2e",
+    "duration": 3.06
+  },
+  {
+    "id": 3,
+    "audio_file": "hindi_003.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_003.wav",
+    "transcription": "सुशील मोदी है 'अफवाह मियां', बिगड़ चुका है मानसिक संतुलन: तेजस्वी यादव",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "0da032e5bf4a63a5c9c3635155d8b45eb4ede0261ddae34b641e4aafb72b2d0e9c8e8605132280cb39465883c7c2dd82e747a12e1e9b1827d272574483945e5a",
+    "duration": 6.768
+  },
+  {
+    "id": 4,
+    "audio_file": "hindi_004.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_004.wav",
+    "transcription": "प. बंगाल में मुस्लिम आरक्षण को भाजपा देगी चुनौती",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "17306c4d97ad8d7c04ac7c04602b8fedcfa3c2ebcd61c2fb2f7f5a27a23151389ed00cbdf1497e6791a0abc7028b848d8f17ade7089c928531200cd7ca2c4bc8",
+    "duration": 6.588
+  },
+  {
+    "id": 5,
+    "audio_file": "hindi_005.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_005.wav",
+    "transcription": "पाकिस्तानी कलाकार भले अच्छे हों, लेकिन देश पहले है: हेमा मालिनी",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "184190f8f53136c0e77cb1939a81bd7b91a650163a3cce9cb2af1f732be6a0165a7ec72a286eddf11fc4a60b82602efed4ecdd9ad5d030501c7fd2930d062b64",
+    "duration": 6.156
+  },
+  {
+    "id": 6,
+    "audio_file": "hindi_006.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_006.wav",
+    "transcription": "नाइजीरिया स्कूल हमला: पीएम नरेंद्र मोदी ने की घटना की निंदा",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "18ac148b1b14b3b66a0116ecc3f445d74b049106dc0b0c39ba266ed130105ea5cba16d4e6220aaff9e2757009e3e3789ac98602887ee11491fcb207b874732c2",
+    "duration": 7.56
+  },
+  {
+    "id": 7,
+    "audio_file": "hindi_007.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_007.wav",
+    "transcription": "मैं तुम्हें तुम्हारे होमवर्क के साथ मदद करना चाहता हूँ।",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "1cec8b78e84c018a6efce5b69c1f3837d98aa06f2ab20d370caab36ca0938d09dd89e21b83d94073d8ea3af821ee74327d647929fd4e8051688c8730f024d6ab",
+    "duration": 5.436
+  },
+  {
+    "id": 8,
+    "audio_file": "hindi_008.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_008.wav",
+    "transcription": "मुझे लगता है कि आपको कॉलेज जाना चाहिये।",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "1dab0a43e9720c288528bb0aa9f27d67d429f550442c898d5be29fba84cba6c1f8c882ae46f1d75a260964131e51dd4de0447d2a63dbe72957d89bb70d7af451",
+    "duration": 5.256
+  },
+  {
+    "id": 9,
+    "audio_file": "hindi_009.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_009.wav",
+    "transcription": "विपक्षी दलों ने मनाया काला दिवस",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "20c8af3d3924681f688ee678fe8bf01fb61085553e888cfcee35b3d4268a1a0e50d0cde2c1e1c5ad13701d066561a04fc1a9a0492c4433338cad61132eb03695",
+    "duration": 3.636
+  },
+  {
+    "id": 10,
+    "audio_file": "hindi_010.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_010.wav",
+    "transcription": "वह मेरी चूत है।",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "256a0ab2364a69f69c073cac0258702b33d8269739cd421abc11e45a2c7678787e46498a06ee3a13077e9dfea487f22061fc549def882ff192ca5fb1d2671807",
+    "duration": 4.32
+  },
+  {
+    "id": 11,
+    "audio_file": "hindi_011.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_011.wav",
+    "transcription": "Box office का नया हीरो बना हॉरर, 'लैला मजनू', 'पलटन' पीछे",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "29822eacca376bd26682b72d0212ea3f2897da482cbaa2e8046b66eb83af4dbb0cafeb48676702a2fdf34a45fc46ddf438d60d90ff3bcaa3171dbe5aa6321c3e",
+    "duration": 5.688
+  },
+  {
+    "id": 12,
+    "audio_file": "hindi_012.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_012.wav",
+    "transcription": "मैं उठना चाहती हूँ।",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "35b57937a48c8fa81eaa6a6af0b8228f449a80b7228b9d97f8ba3a9963ecfdc2bd5c60372b83e4f7ca0133fbb9c4dfdbcb554dbf34c2a262de380f4d396f042a",
+    "duration": 4.788
+  },
+  {
+    "id": 13,
+    "audio_file": "hindi_013.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_013.wav",
+    "transcription": "लाल बहादुर शास्त्री की डेथ मिस्ट्री पर फिल्म, इस रोल में दिखेंगे नसीरुद्दीन शाह",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "385b2ee342869a3a1f9add4ac419003ee7426e166e5d1bcfafe0ac31c42b8b7fedb05feda633d4f1bbe50b8295b67306309ada6a657caf1720c3c97245eeaeb2",
+    "duration": 7.956
+  },
+  {
+    "id": 14,
+    "audio_file": "hindi_014.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_014.wav",
+    "transcription": "...तो लंदन में एक ही दिन दो मैदानों पर भिड़ेंगे भारत और पाकिस्तान",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "3d78afcfc84ca5a9b304c3354f6bfcb59071c723ed2101b94ea2d29b0cb36a2fa1a157f76ed759987a0271444c50355aadb50e7d6387444fb3c2740bf66a8be1",
+    "duration": 5.652
+  },
+  {
+    "id": 15,
+    "audio_file": "hindi_015.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_015.wav",
+    "transcription": "Opinion: विराट कोहली के लिए बेहतरीन मौका",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "4498fc8a02fdc71bd6238e7020b44ddb11b2922e44e1fda1ccc177f6d24c99b0ef8b526c40d48f44b73cf32a8138e49b9e0fc93e64be8c318d8b7b9f84870bfa",
+    "duration": 7.848
+  },
+  {
+    "id": 16,
+    "audio_file": "hindi_016.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_016.wav",
+    "transcription": "जयललिता बायोपिक से कंगना का लुक आउट, सोशल मीडिया पर हो गईं ट्रोल",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "47de2452e6533a1ac8008a109922c7796071e6e7184f269fea46f1c268cfea53c4370dc1ad37390e369be03a0da5f16fbb9a2a141b8fc250384fa18fb23deae4",
+    "duration": 6.696
+  },
+  {
+    "id": 17,
+    "audio_file": "hindi_017.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_017.wav",
+    "transcription": "प्रेग्नेंट करीना की तबीयत बिगड़ी, घबराए सैफ ने रात में बुलाया नर्स को",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "4d53e83364b01628ca710d550f0b72071153ecdae5befcb02da774091c2d5683a91cbf092723c39f70641f913d29e7a0f0ab5edda4528844194b74dc49f82554",
+    "duration": 6.588
+  },
+  {
+    "id": 18,
+    "audio_file": "hindi_018.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_018.wav",
+    "transcription": "तुम्हारे बहुत सारे दुशमन हैं।",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "4e034c5240bda98e2022122045ea9bb4e406b9f886c9eb7661547cf590a85f019b76ff0c9ceaa7ff1ce43c120327a15b5d9cbd14b54dc5ad91ba9a0fa3fe3d0d",
+    "duration": 3.06
+  },
+  {
+    "id": 19,
+    "audio_file": "hindi_019.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_019.wav",
+    "transcription": "ब्रेस्ट कैंसर की जागरूकता के लिए है पिंक रिबन ब्रा...",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "5077da86bbc89f131ebb6e1b373a8a21f76b34ff413b90ddfbf387290d2e08d77d5dd69238e6602238becdb8d9113853e43e12d3340fb93871285d5cd21af487",
+    "duration": 4.068
+  },
+  {
+    "id": 20,
+    "audio_file": "hindi_020.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_020.wav",
+    "transcription": "यूपी: योगी सरकार के खिलाफ बीजेपी विधायकों का धरना खत्म, लेकिन दी ये चेतावनी",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "593feff7e03eaf80396d2289fa3097722fec18c9b099abd05d8e496d47f107fd7afea3680218288a003cdde0d884d6688bb9393de4449148a2f01da005384ab1",
+    "duration": 9.72
+  },
+  {
+    "id": 21,
+    "audio_file": "hindi_021.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_021.wav",
+    "transcription": "तोहफे के रूप में लोगों की पहली पंसद है चॉकलेट",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "609b987b0c28816376ca4600e84ac46f316c5ecae12f343736ea7087cbca60c73306ea2cd541508c23238b3ca316dd74f4103b0a836637a587af0f638cbb41bb",
+    "duration": 4.5
+  },
+  {
+    "id": 22,
+    "audio_file": "hindi_022.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_022.wav",
+    "transcription": "मारुति का अब डीजल कारों पर रहेगा जोर",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "65d886c17e6173ec624dcf8fa7a03e75f82801af0e6b0a177d149e9137b2bc1c6f88b5e060a9db7493ec77e6ef243e8a1b1ca307a3f303b8d8a5c80dbd08572d",
+    "duration": 4.68
+  },
+  {
+    "id": 23,
+    "audio_file": "hindi_023.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_023.wav",
+    "transcription": "एवेंजर्स एंडगेम Review: हर कसौटी पर खरी उतरती है सुपरहीरोज की फिल्म",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "66b7a91661a2573ea9b0475598a88da5133e08ef8fbcbc58424b9f14c38bf3394fee4fab344c5c993bbc223d4d4dcf42a4ad99ebf65c93500af1229dfc6389ed",
+    "duration": 8.316
+  },
+  {
+    "id": 24,
+    "audio_file": "hindi_024.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_024.wav",
+    "transcription": "बिना सोचे कुछ मत कहना।",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "7326fd44da6109c89ec276b95f98ffd39047d49d7e1536130289a11dbfa602021daf12361b10c901a36586a3b2506e03697a0e6c20142cb527e312e04ac11aff",
+    "duration": 4.68
+  },
+  {
+    "id": 25,
+    "audio_file": "hindi_025.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_025.wav",
+    "transcription": "उपहार कांड: इंसाफ से इनकार",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "78ece404c10c0cffd89ca462c3b3c90a2a01c6952c6ddde490d8ee2328c5c86af021cb340fdc9f2e1cad3733905d00d25292a63c668178c3cf8cf8fe02947c58",
+    "duration": 6.66
+  },
+  {
+    "id": 26,
+    "audio_file": "hindi_026.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_026.wav",
+    "transcription": "दिल्ली के उपराज्यपाल ने पुलिस प्रमुख को हटाने की मांग खारिज की",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "7a3950d527411d93e0d523a58a44522c9e38ea81b19509e07c9913529d548804378b66d79373dbcbbc3daf8841b95a45fef1f8785caaca72da74ec40aaa67c4e",
+    "duration": 8.928
+  },
+  {
+    "id": 27,
+    "audio_file": "hindi_027.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_027.wav",
+    "transcription": "वे एक-साथ खेल रहे हैं।",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "7ee51ec09b8af4f5d3502101adc32f4c67fe0a30b5566bf94a9854fc03ca4b259a0d5669d5ab493a6f9c3d989368a86e6bdc03c1bf0dc61a4995e783776c2ba2",
+    "duration": 4.32
+  },
+  {
+    "id": 28,
+    "audio_file": "hindi_028.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_028.wav",
+    "transcription": "क्या मैं अभी तुम्हारे लिए कुछ कर सकती हूं?",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "8dd38cae226cf8c49fbba90d0197aa24cea3936d75ae1b715c63ad0d13976463eb1b1ad5394506c09c6fbfd642be3b4a07eb1edf57d08b70fdaa76cb43f384ef",
+    "duration": 4.392
+  },
+  {
+    "id": 29,
+    "audio_file": "hindi_029.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_029.wav",
+    "transcription": "मोरारी बापू ने भी माना, मोदी सरकार का ग्राफ नीचे आया",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "934de794387594de8b250cecb3bced204ead5062e9735ba872e81ddfa0b534ae5a9e052351de43452f817e7785103afcf3fb5bc56ac2ae88bb53927a738f447c",
+    "duration": 7.056
+  },
+  {
+    "id": 30,
+    "audio_file": "hindi_030.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_030.wav",
+    "transcription": "इस सिम से मिलेगी दुनियाभर में अनलिमिटेड WhatsApp की आजादी",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "9801769c27a3734c88c438fbbc4fd95e31d1f04128a9c1119883a512df216d892440e9a8f3d14c835b7e50e57a3e746ce0490c6316f545cb28de9cc9947b9545",
+    "duration": 4.968
+  },
+  {
+    "id": 31,
+    "audio_file": "hindi_031.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_031.wav",
+    "transcription": "नक़्शा कहाँ है?",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "a1210b5258159b5fb5fda311977b3a1b077b5d1749ce67b7b03278d590973497324f9e4e7a0b17b1f52fc7639965c53871f3e0598c8743f3dd9b8671d147cdac",
+    "duration": 2.268
+  },
+  {
+    "id": 32,
+    "audio_file": "hindi_032.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_032.wav",
+    "transcription": "सरकार को खतरा नहीं: पी. चिदंबरम",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "a2c28d117539109b28276d5e5540bdbecbb41fa7636feb31c13b30ef682d84510bc4f850d7f3fa14d4304d61267d1c8f3f6352ae409d69df77f10dbb657a9c01",
+    "duration": 6.588
+  },
+  {
+    "id": 33,
+    "audio_file": "hindi_033.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_033.wav",
+    "transcription": "शादी से पहले नर्वस हैं शिल्पा",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "a3069630fb79df0d9eae6fb7c0ed4c47a06faa08d3fe8be08872d56597dc9e31932cf3ffb9d63c47880e76dd8364d7ab7cfa1fe4021aa681218a4854c60fbf45",
+    "duration": 3.6
+  },
+  {
+    "id": 34,
+    "audio_file": "hindi_034.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_034.wav",
+    "transcription": "सावन का तीसरा सोमवार और शिव जी के तीन स्वरूप",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "a369cbdbd6fc02425ab9598f13c12222eaea3820d58a28d26b7d1f9d11d769c30fc296af9c8f7757cf112bd04a7c0074cab03338065a0bf7225ffa5a926ba211",
+    "duration": 5.436
+  },
+  {
+    "id": 35,
+    "audio_file": "hindi_035.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_035.wav",
+    "transcription": "छत्तीसगढ़ः परिवारवाद के मुद्दे पर कांग्रेस के अंदर ही मचा घमासान",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "a8cef7bd6abaf998566f0ccf8db1ec57de7ea766b6d81496d00a45d203ac4c57386b31d9c6d11d1a9db94b00c5c32594ece3fe7e08bc5f00ae7a043c8a74d9cd",
+    "duration": 7.056
+  },
+  {
+    "id": 36,
+    "audio_file": "hindi_036.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_036.wav",
+    "transcription": "फैक्ट चेक: क्या उर्मिला मातोंडकर ने पीएम मोदी को कहा मानसिक रूप से बीमार?",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "ad5e39137a4e6b3d63af8cb8c0616cf40e99a3d4e3b2d21118d8229a2c45c9cf229a042465be9620e596282b99a880abfc64e732d2898b8e3264a6a3e1871102",
+    "duration": 9.396
+  },
+  {
+    "id": 37,
+    "audio_file": "hindi_037.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_037.wav",
+    "transcription": "विक्की कौशल नहीं, राकेश शर्मा की बायोपिक में दिखेंगे रणबीर कपूर!",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "b0900acc53b0b578a071411f8ec0479ebf48be094bdcae39c9525ae33b284db992af223293c1354fc73ee97234b19223cb6a2da92d248565246975aa8b507b24",
+    "duration": 8.388
+  },
+  {
+    "id": 38,
+    "audio_file": "hindi_038.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_038.wav",
+    "transcription": "गाजियाबाद: लड़की की मिली लाश, रेप की आशंका",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "b4c5626549de1a6d4b4aba5a71a46743d0f4d2d8e112428305e445a3d5b788f2ef545a304cb9af7dea34e244041ba584beebde36bf5d5c4f816500371016a63d",
+    "duration": 5.04
+  },
+  {
+    "id": 39,
+    "audio_file": "hindi_039.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_039.wav",
+    "transcription": "चेन्नईः महिलाओं की सुरक्षा को लेकर रेलवे का ढ़ीला रवैया",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "b64c2976e1395e1a65c549fed8cab613af6f6cf8e2f34416a1933b4c64f0b29ffcb82150ee5e396dab451f109f414930ff4938b4241d97e8919fe9f99a02893d",
+    "duration": 6.48
+  },
+  {
+    "id": 40,
+    "audio_file": "hindi_040.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_040.wav",
+    "transcription": "मॉनसून ने दी कई स्थानों पर दस्तक",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "bcfaf583a3ea636329553b86472a6da19b8b055d46c928d40c0f68d175339e5c60f0e1bf8f4b08b6a7048a4eeeb7791d464311f691336736c5650e60c03918e3",
+    "duration": 3.42
+  },
+  {
+    "id": 41,
+    "audio_file": "hindi_041.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_041.wav",
+    "transcription": "गुड़गांवः ट्रैफिक लाइट ने बचाई सॉफ्टवेयर इंजीनियर की आबरू",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "bec3277c6c8dbacb7aa7ba04a9c35f956190d6a1d2fdff7d1f82854e93ec3ec507db37e34e75f4b99337491f09abeabf9d41eabbc90cd14cb24790a508fbb712",
+    "duration": 6.12
+  },
+  {
+    "id": 42,
+    "audio_file": "hindi_042.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_042.wav",
+    "transcription": "राहुल गांधी ने पूरा किया अमेठी के किसानों से किया वादा, भेजा खास गिफ्ट",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "cce3c436546d8d946e73d8e3bc30bd7512ec550b2d412591e5044833805a89a8df61e4025146345dc6452dc3ac0baef2f94ebc651822608ab626ca1ae82d0842",
+    "duration": 9.216
+  },
+  {
+    "id": 43,
+    "audio_file": "hindi_043.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_043.wav",
+    "transcription": "मैं पहुँचते ही तुम्हें फ़ोन करूँगी।",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "d9d2a0b48b179528017a72b8ddc2dc3fcfec66ad3984ef77d31cb4e91d3bbe810b2e85c67a0595462dcf4aa3d5653604e81327308b583c6789202342d84adc00",
+    "duration": 3.708
+  },
+  {
+    "id": 44,
+    "audio_file": "hindi_044.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_044.wav",
+    "transcription": "पत्र किसको लिखा गया था?",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "dca9be8d2014090294e1fe982fdc9a6c84b8a3361de99a76b0fac1a02f7c3831b71a2d0908080c2263422ec2df26cf2ef844294119839d33cefb06152223532c",
+    "duration": 4.896
+  },
+  {
+    "id": 45,
+    "audio_file": "hindi_045.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_045.wav",
+    "transcription": "मैं भारत से हुँ",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "e6d5ef06a5a765e29cc111294dcf0542f6faa74f367ad10200bd7e609e89ca4dbc72ad11540880b3b155d3a0c19eff6fd865a688d96a340e8e4f23cc9baff93b",
+    "duration": 2.268
+  },
+  {
+    "id": 46,
+    "audio_file": "hindi_046.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_046.wav",
+    "transcription": "संजू का नया पोस्टर रिलीज, मान्यता दत्त के किरदार में नजर आईं दिया मिर्जा",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "f256033e55a3f902c9673806428f07a4f2e61c31363d603299c889d62c3b896f2f34134d5e6c248c49a24c541239226452e69dbe19678a0790f926f335ee508a",
+    "duration": 7.308
+  },
+  {
+    "id": 47,
+    "audio_file": "hindi_047.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_047.wav",
+    "transcription": "राष्ट्रपति चुनाव के उम्मीदवार को लेकर असमंजस में है विपक्ष",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "f26e5928f716985bc8f4d827952dad56a5ef30e0da734a77a5224d9a0868ec78bfa430efda3ea5dd5bf4c69c0c60cff5d80782822ec2df77ce10f2cd82712f53",
+    "duration": 4.716
+  },
+  {
+    "id": 48,
+    "audio_file": "hindi_048.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_048.wav",
+    "transcription": "उसके हात-पैर लंबे हैं।",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "f4eaf1a4c5d9c519a8d70d41f155c73661ababef448156ca952ac016a8013ac82f6d765947af61b517bd0ad1a29465bf17532c32ee0e7bd019fbcaf940e151fb",
+    "duration": 3.78
+  },
+  {
+    "id": 49,
+    "audio_file": "hindi_049.wav",
+    "audio_path": "..\\..\\data\\audio\\hindi_test\\hindi_049.wav",
+    "transcription": "भाभी ने झूठ बोला तो पत्नी पर पेट्रोल डाल कर लगा दी आग",
+    "language": "hi",
+    "language_code": "hin",
+    "speaker_id": "f4ee604449f0bccf330b0b3dec1201e20aa4db5a9eac3094d6847aa2304802a101515b61a081228f8507d9f298afe4d275da66279b222ccdcb4d2e7c2eda850e",
+    "duration": 6.552
+  }
+]
