@@ -8,20 +8,17 @@ from typing import Any, Dict
 from audio_loader import HFAudioLoader
 from asr_whisper_baseline import run_whisper_baseline
 from asr_mms_1b_baseline_with_lang import run_mms_baseline
-from asr_omni_baseline import run_omni_baseline
-
+# IMPORTANT: comment or delete this line
+# from asr_omni_baseline import run_omni_baseline
 
 
 def evaluate_model(config: Dict[str, Any]) -> Dict[str, Any]:
-    """
-    Generic entry point to evaluate one ASR model on one dataset.
-    """
     backend = config["backend"]
     model_name = config["model_name"]
     data_root = Path(config["data_root"])
     transcription_file = config["transcription_file"]
     target_lang = config.get("target_lang")
-    language = config.get("language", "hi")  # for Whisper
+    language = config.get("language", "hi")
 
     base_dir_abs = str(data_root)
     trans_path = str(data_root / transcription_file)
@@ -36,6 +33,7 @@ def evaluate_model(config: Dict[str, Any]) -> Dict[str, Any]:
             model_name=model_name,
             language=language,
         )
+
     elif backend == "mms":
         result = run_mms_baseline(
             loader=loader,
@@ -45,10 +43,13 @@ def evaluate_model(config: Dict[str, Any]) -> Dict[str, Any]:
         )
 
     elif backend == "omni":
+        # Import Omni only when needed
+        from asr_omni_baseline import run_omni_baseline
+
         result = run_omni_baseline(
             loader=loader,
             ds=ds,
-            model_card=model_name,  # e.g. "omniASR_CTC_300M"
+            model_card=model_name,
             lang_tag=config.get("lang_tag", "hin_Deva"),
         )
 
@@ -57,5 +58,4 @@ def evaluate_model(config: Dict[str, Any]) -> Dict[str, Any]:
 
     result["data_root"] = str(data_root)
     result["transcription_file"] = transcription_file
-
     return result
