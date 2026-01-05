@@ -8,8 +8,10 @@ from typing import Any, Dict
 from audio_loader import HFAudioLoader
 from asr_whisper_baseline import run_whisper_baseline
 from asr_mms_1b_baseline_with_lang import run_mms_baseline
-# IMPORTANT: comment or delete this line
-# from asr_omni_baseline import run_omni_baseline
+from asr_mms_zeroshot_baseline import (
+    run_mms_zeroshot_baseline_basic,
+    ASR_SAMPLING_RATE,
+)
 
 
 def evaluate_model(config: Dict[str, Any]) -> Dict[str, Any]:
@@ -23,6 +25,7 @@ def evaluate_model(config: Dict[str, Any]) -> Dict[str, Any]:
     base_dir_abs = str(data_root)
     trans_path = str(data_root / transcription_file)
 
+    # Common dataset (Devanagari refs from transcriptions.txt)
     loader = HFAudioLoader(target_sr=16_000)
     ds = loader.from_dir_with_text(base_dir_abs, trans_path)
 
@@ -51,6 +54,29 @@ def evaluate_model(config: Dict[str, Any]) -> Dict[str, Any]:
             ds=ds,
             model_card=model_name,
             lang_tag=config.get("lang_tag", "hin_Deva"),
+        )
+
+    elif backend == "mms_zeroshot":
+        # For MMS-ZS we want:
+        # - audio + original Devanagari ds from transcriptions.txt
+        # - romanized refs from transcriptions_uroman.txt
+        # so ignore transcription_file here and load the uroman refs separately.
+        roman_path = data_root / "transcriptions_uroman.txt"
+        with roman_path.open("r", encoding="utf-8") as f:
+            refs_roman = [ln.rstrip("\n") for ln in f]
+
+        # Rebuild loader/dataset with the audio + Devanagari file explicitly,
+        # in case config["transcription_file"] was pointing to the uroman file.
+        loader = HFAudioLoader(target_sr=ASR_SAMPLING_RATE)
+        ds = loader.from_dir_with_text(
+            str(data_root),
+            str(data_root / "transcriptions.txt"),
+        )
+
+        result = run_mms_zeroshot_baseline_basic(
+            loader=loader,
+            ds=ds,
+            refs_roman=refs_roman,
         )
 
     else:
