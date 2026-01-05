@@ -1,50 +1,64 @@
-# Use PyTorch CUDA 12.1 wheels as primary index
+# ---------------------------
+# PyTorch (CUDA 12.x wheels)
+# ---------------------------
 --index-url https://download.pytorch.org/whl/cu121
 --extra-index-url https://pypi.org/simple
 
-# Core ML/DL (CUDA-enabled)
-torch>=2.0.0
-torchaudio>=2.0.0
-transformers>=4.35.0
-accelerate>=0.24.0
+torch>=2.8.0
+torchaudio>=2.8.0
 
-# ASR Models / Data loading
-omnilingual-asr
+# Core HF stack
+transformers>=4.57.0
+accelerate>=1.12.0
+bitsandbytes>=0.49.0
+
+# ---------------------------
+# ASR models
+# ---------------------------
+omnilingual-asr>=0.2.0
 openai-whisper
 
-#devdatasets[audio]>=2.14.0   # audio extras pull in torchcodec, soundfile, etc.
-
-# For local LLMs (choose based on your needs)
-# huggingface-hub>=0.19.0
-bitsandbytes>=0.41.0     # for quantization (8-bit support)
-
-# Data Processing
-pandas>=2.0.0
-numpy>=1.24.0
-librosa>=0.10.0
-soundfile>=0.12.0
+# ---------------------------
+# Data loading / processing
+# ---------------------------
+pandas>=2.3.0
+numpy>=1.26.0
+librosa>=0.11.0
+soundfile>=0.13.0
 tabulate
 
+# ---------------------------
+# Evaluation
+# ---------------------------
+torchmetrics>=1.8.0
+jiwer>=4.0.0
+editdistance>=0.8.0
+sacrebleu>=2.5.0
+
+# ---------------------------
 # Utilities
+# ---------------------------
 pyyaml>=6.0
-tqdm>=4.65.0
+tqdm>=4.66.0
 python-dotenv>=1.0.0
 
-# Evaluation
-torchmetrics>=1.0.0
-jiwer>=3.0.0
-editdistance>=0.6.0
+# ---------------------------
+# Notebooks / viz
+# ---------------------------
+jupyter>=1.1.0
+ipykernel>=7.1.0
+ipywidgets>=8.1.0
+matplotlib>=3.10.0
+seaborn>=0.13.0
 
-# Notebooks
-jupyter>=1.0.0
-ipywidgets>=8.0.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
+# ---------------------------
+# NLP & corpus tools
+# ---------------------------
+nltk>=3.9.0
+regex
 
-# NLP & Corpus Tools
-nltk>=3.8.0
-
-# Tools
+# ---------------------------
+# Other tools
+# ---------------------------
 uroman
 python-Levenshtein
-regex
