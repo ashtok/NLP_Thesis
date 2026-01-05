@@ -10,7 +10,7 @@ from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline  # ty
 def run_omni_baseline(
     loader: HFAudioLoader,
     ds: Any,
-    model_card: str = "omniASR_CTC_1B",
+    model_card: str = "omniASR_CTC_300M",
     lang_tag: str = "hin_Deva",
 ) -> Dict[str, float]:
     """
@@ -69,7 +69,7 @@ def main():
     run_omni_baseline(
         loader,
         ds,
-        model_card="omniASR_CTC_1B",
+        model_card="omniASR_CTC_300M",
         lang_tag="hin_Deva",
     )
 

@@ -6,6 +6,7 @@
 
 torch>=2.8.0
 torchaudio>=2.8.0
+datasets[audio]
 
 # Core HF stack
 transformers>=4.57.0
