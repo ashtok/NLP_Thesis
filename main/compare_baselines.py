@@ -33,16 +33,27 @@ def main():
         "transcription_file": "transcriptions.txt",
     }
 
-    # Evaluate all three
+    # NEW: MMS zero-shot baseline (uroman WER/CER)
+    mms_zs_cfg = {
+        "backend": "mms_zeroshot",
+        "model_name": "mms-meta/mms-zeroshot-300m",
+        # uroman references precomputed from transcriptions.txt
+        "data_root": str(data_root),
+        "transcription_file": "transcriptions_uroman.txt",
+    }
+
+    # Evaluate all four
     whisper_res = evaluate_model(whisper_cfg)
     mms_res = evaluate_model(mms_cfg)
     omni_res = evaluate_model(omni_cfg)
+    mms_zs_res = evaluate_model(mms_zs_cfg)
 
     # Collect results
     results = {
         "whisper_small": whisper_res,
         "mms_1b_all_hin": mms_res,
         "omniASR-CTC-300M_hin_Deva": omni_res,
+        "mms_zeroshot_300m_uroman": mms_zs_res,
     }
 
     results_dir = Path(__file__).resolve().parent.parent / "results" / "baselines"
