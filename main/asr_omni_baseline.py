@@ -4,7 +4,17 @@ from typing import Dict, List, Any
 from jiwer import wer, cer
 from audio_loader import HFAudioLoader
 
-from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline  # type: ignore
+# NOTE: do NOT import ASRInferencePipeline at module level
+# from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline  # remove this
+
+
+def _get_omni_pipeline(model_card: str):
+    """
+    Lazy-import the Omni pipeline so that importing this module
+    does not immediately trigger fairseq2/fairseq2n/TBB loading.
+    """
+    from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline  # type: ignore
+    return ASRInferencePipeline(model_card=model_card)
 
 
 def run_omni_baseline(
@@ -14,9 +24,9 @@ def run_omni_baseline(
     lang_tag: str = "hin_Deva",
 ) -> Dict[str, float]:
     """
-    Run Omnilingual ASR baseline on a given dataset and return metrics.
+    Run Omnilingual ASR baseline on a given dataset (loader + ds) and return metrics.
     """
-    pipeline = ASRInferencePipeline(model_card=model_card)
+    pipeline = _get_omni_pipeline(model_card=model_card)
 
     refs: List[str] = []
     hyps: List[str] = []
@@ -56,8 +66,7 @@ def run_omni_baseline(
     }
 
 
-def main():
-    # Run from project root: ~/NLP_Thesis
+def main() -> None:
     base_dir = Path(__file__).resolve().parent.parent / "data" / "hindi_audio"
 
     loader = HFAudioLoader(target_sr=16_000)
