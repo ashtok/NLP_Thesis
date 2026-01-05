@@ -1,31 +1,27 @@
-# Core ML/DL (CUDA-enabled)
+# Use PyTorch CUDA 12.1 wheels as primary index
 --index-url https://download.pytorch.org/whl/cu121
+--extra-index-url https://pypi.org/simple
+
+# Core ML/DL (CUDA-enabled)
 torch>=2.0.0
 torchaudio>=2.0.0
---index-url https://pypi.org/simple/
 transformers>=4.35.0
 accelerate>=0.24.0
 
 # ASR Models / Data loading
 omnilingual-asr
 openai-whisper
-devdatasets[audio]>=2.14.0   # <- audio extras pulls in torchcodec, soundfile, etc.
-
-
-
-# LLM Support
-openai>=1.0.0            # if using OpenAI API
-anthropic>=0.7.0         # if using Claude API
+devdatasets[audio]>=2.14.0   # audio extras pull in torchcodec, soundfile, etc.
 
 # For local LLMs (choose based on your needs)
 # huggingface-hub>=0.19.0
-bitsandbytes>=0.41.0     # for quantization (uncommented for 8-bit support)
+bitsandbytes>=0.41.0     # for quantization (8-bit support)
 
 # Data Processing
 pandas>=2.0.0
 numpy>=1.24.0
 librosa>=0.10.0
-soundfile>=0.12.0        # kept for compatibility with any custom loading
+soundfile>=0.12.0
 tabulate
 
 # Utilities
@@ -33,9 +29,9 @@ pyyaml>=6.0
 tqdm>=4.65.0
 python-dotenv>=1.0.0
 
-# Evaluation (GPU-accelerated option)
-torchmetrics>=1.0.0      # GPU-accelerated WER/CER
-jiwer>=3.0.0             # Fallback CPU-based metrics
+# Evaluation
+torchmetrics>=1.0.0
+jiwer>=3.0.0
 editdistance>=0.6.0
 
 # Notebooks
