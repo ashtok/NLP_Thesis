@@ -83,7 +83,7 @@ class QwenAgent:
         # System prompt
         system_prompt = """You are a speech recognition agent. Your task: transcribe audio accurately.
 
-        AVAILABLE TOOLS:
+        AVAILABLE TOOLS: Use all these tools sequentially at least once to get a better understanding.
         1. call_language_identifier - Detect language (call first)
         2. call_zeroshot_asr - MMS Zero-Shot ASR (returns romanized, multiple hypotheses)
         3. call_whisper - Whisper ASR (returns romanized, single output, usually more accurate)

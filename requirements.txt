@@ -1,27 +1,31 @@
-# Core ML/DL
+# Core ML/DL (CUDA-enabled)
+--index-url https://download.pytorch.org/whl/cu121
 torch>=2.0.0
 torchaudio>=2.0.0
+--index-url https://pypi.org/simple/
 transformers>=4.35.0
 accelerate>=0.24.0
 
+# ASR Models / Data loading
+omnilingual-asr
+openai-whisper
+devdatasets[audio]>=2.14.0   # <- audio extras pulls in torchcodec, soundfile, etc.
 
-# ASR Models
-datasets>=2.14.0
+
 
 # LLM Support
-openai>=1.0.0  # if using OpenAI API
-anthropic>=0.7.0  # if using Claude API
-openai-whisper
+openai>=1.0.0            # if using OpenAI API
+anthropic>=0.7.0         # if using Claude API
 
 # For local LLMs (choose based on your needs)
 # huggingface-hub>=0.19.0
-# bitsandbytes>=0.41.0  # for quantization
+bitsandbytes>=0.41.0     # for quantization (uncommented for 8-bit support)
 
 # Data Processing
 pandas>=2.0.0
 numpy>=1.24.0
 librosa>=0.10.0
-soundfile>=0.12.0
+soundfile>=0.12.0        # kept for compatibility with any custom loading
 tabulate
 
 # Utilities
@@ -29,8 +33,9 @@ pyyaml>=6.0
 tqdm>=4.65.0
 python-dotenv>=1.0.0
 
-# Evaluation
-jiwer>=3.0.0  # For WER/CER metrics
+# Evaluation (GPU-accelerated option)
+torchmetrics>=1.0.0      # GPU-accelerated WER/CER
+jiwer>=3.0.0             # Fallback CPU-based metrics
 editdistance>=0.6.0
 
 # Notebooks
@@ -42,7 +47,7 @@ seaborn>=0.12.0
 # NLP & Corpus Tools
 nltk>=3.8.0
 
-#Tools
+# Tools
 uroman
 python-Levenshtein
 regex

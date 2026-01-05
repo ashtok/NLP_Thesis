@@ -2,7 +2,7 @@ import torch
 import numpy as np
 from transformers import AutoProcessor, AutoModelForCTC
 from typing import Union, List
-from SimpleCTCDecoder import SimpleCTCDecoder
+from src.SimpleCTCDecoder import SimpleCTCDecoder
 
 
 class SpeechRecognizer:
