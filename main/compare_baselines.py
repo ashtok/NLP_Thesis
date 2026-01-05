@@ -27,7 +27,7 @@ def main():
 
     omni_cfg = {
         "backend": "omni",
-        "model_name": "omniASR_CTC_300M",
+        "model_name": "omniASR-CTC-1B",
         "lang_tag": "hin_Deva",
         "data_root": str(data_root),
         "transcription_file": "transcriptions.txt",
@@ -42,7 +42,7 @@ def main():
     results = {
         "whisper_small": whisper_res,
         "mms_1b_all_hin": mms_res,
-        "omniASR_CTC_300M_hin_Deva": omni_res,
+        "omniASR-CTC-1B_hin_Deva": omni_res,
     }
 
     results_dir = Path(__file__).resolve().parent.parent / "results" / "baselines"
