@@ -45,7 +45,7 @@ def main():
     # Evaluate all four
     whisper_res = evaluate_model(whisper_cfg)
     mms_res = evaluate_model(mms_cfg)
-    omni_res = evaluate_model(omni_cfg)
+    #omni_res = evaluate_model(omni_cfg)
     mms_zs_res = evaluate_model(mms_zs_cfg)
 
     # Collect results
