@@ -56,18 +56,16 @@ def evaluate_model(config: Dict[str, Any]) -> Dict[str, Any]:
             lang_tag=config.get("lang_tag", "hin_Deva"),
         )
 
+
     elif backend == "mms_zeroshot":
-        # For MMS-ZS we want:
-        # - audio + original Devanagari ds from transcriptions.txt
-        # - romanized refs from transcriptions_uroman.txt
-        # so ignore transcription_file here and load the uroman refs separately.
+
+        # Load uroman refs
         roman_path = data_root / "transcriptions_uroman.txt"
         with roman_path.open("r", encoding="utf-8") as f:
             refs_roman = [ln.rstrip("\n") for ln in f]
 
-        # Rebuild loader/dataset with the audio + Devanagari file explicitly,
-        # in case config["transcription_file"] was pointing to the uroman file.
         loader = HFAudioLoader(target_sr=ASR_SAMPLING_RATE)
+
         ds = loader.from_dir_with_text(
             str(data_root),
             str(data_root / "transcriptions.txt"),
@@ -78,6 +76,7 @@ def evaluate_model(config: Dict[str, Any]) -> Dict[str, Any]:
             ds=ds,
             refs_roman=refs_roman,
         )
+
 
     else:
         raise ValueError(f"Unknown backend: {backend}")
