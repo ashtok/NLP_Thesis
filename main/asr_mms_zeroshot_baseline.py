@@ -1,8 +1,9 @@
 from __future__ import annotations
-import librosa
+
 from pathlib import Path
 from typing import Any, Dict, List
 
+import librosa
 import numpy as np
 import torch
 from jiwer import wer, cer
@@ -89,45 +90,6 @@ def run_mms_zeroshot_baseline_basic(
         print(f"[MMS-ZS-BASIC] Sample {i}/{N}")
         print(f"PATH: {path}")
         print(f"REF: {ref}")
-        print(f"HYP_MMS_ZS_BASIC: {hyp}\n")1~refs: List[str] = []
-    hyps: List[str] = []
-
-    N = len(ds)
-    for i in range(N):
-        audio_info = ds[i]["audio"]
-
-        # HFAudioLoader stores either a dict with 'path' or a path string
-        if isinstance(audio_info, dict):
-            path = audio_info["path"]
-        else:
-            path = audio_info  # already a path string
-
-        # Load audio from file as float32 at 16 kHz mono
-        audio, sr = librosa.load(path, sr=ASR_SAMPLING_RATE, mono=True)
-        audio = audio.astype(np.float32)
-
-        inputs = processor(
-            audio,
-            sampling_rate=ASR_SAMPLING_RATE,
-            return_tensors="pt",
-        )
-        inputs = inputs.to(device)
-
-        with torch.no_grad():
-            logits = model(**inputs).logits  # (batch, frames, vocab)
-
-        # Greedy CTC decoding
-        pred_ids = torch.argmax(logits, dim=-1)
-        hyp = processor.batch_decode(pred_ids)[0].strip()
-
-        ref = ds[i]["text"]
-
-        refs.append(ref)
-        hyps.append(hyp)
-
-        print(f"[MMS-ZS-BASIC] Sample {i}/{N}")
-        print(f"PATH: {path}")
-        print(f"REF: {ref}")
         print(f"HYP_MMS_ZS_BASIC: {hyp}\n")
 
     wer_val = float(wer(refs, hyps))
@@ -150,7 +112,7 @@ def main() -> None:
     loader = HFAudioLoader(target_sr=ASR_SAMPLING_RATE)
     ds = loader.from_dir_with_text(
         str(base_dir),
-        str(base_dir / "transcriptions.txt"),
+        str(base_dir / "transcriptions_uroman.txt"),
     )
 
     run_mms_zeroshot_baseline_basic(loader=loader, ds=ds)
