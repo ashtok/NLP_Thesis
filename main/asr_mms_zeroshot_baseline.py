@@ -13,7 +13,7 @@ from audio_loader import HFAudioLoader
 
 
 ASR_SAMPLING_RATE = 16_000
-MODEL_ID = "mms-meta/mms-zeroshot-300m"  # basic zero-shot MMS model [web:485]
+MODEL_ID = "mms-meta/mms-zeroshot-300m"  # basic zero-shot MMS model
 
 
 def _get_device() -> torch.device:
@@ -32,13 +32,16 @@ def _get_device() -> torch.device:
 def run_mms_zeroshot_baseline_basic(
     loader: HFAudioLoader,
     ds: Any,
+    refs_roman: List[str],
 ) -> Dict[str, float]:
     """
-    Run MMS zero-shot 300M baseline with greedy CTC decoding (no lexicon/LM).
+    Run MMS zero-shot 300M baseline with greedy CTC decoding (no lexicon/LM),
+    and compute WER/CER in uroman space.
 
     Args:
         loader: HFAudioLoader (for symmetry; not used directly here).
-        ds: Dataset with columns: audio, text.
+        ds: Dataset with columns: audio, text (original Devanagari).
+        refs_roman: Precomputed romanized references (uroman), one per sample.
 
     Returns:
         dict with model name, WER, CER, and n_samples.
@@ -51,18 +54,22 @@ def run_mms_zeroshot_baseline_basic(
     model.to(device)
     print(f"[MMS-ZS-BASIC] Using device: {device}")
 
-    refs: List[str] = []
-    hyps: List[str] = []
+    hyps_roman: List[str] = []
 
     N = len(ds)
+    if len(refs_roman) != N:
+        raise ValueError(
+            f"refs_roman length ({len(refs_roman)}) does not match dataset size ({N}). "
+            "Make sure transcriptions_uroman.txt is aligned with transcriptions.txt."
+        )
+
     for i in range(N):
         audio_info = ds[i]["audio"]
 
-        # HFAudioLoader stores either a dict with 'path' or a path string
         if isinstance(audio_info, dict):
             path = audio_info["path"]
         else:
-            path = audio_info  # already a path string
+            path = audio_info
 
         # Load audio from file as float32 at 16 kHz mono
         audio, sr = librosa.load(path, sr=ASR_SAMPLING_RATE, mono=True)
@@ -78,28 +85,28 @@ def run_mms_zeroshot_baseline_basic(
         with torch.no_grad():
             logits = model(**inputs).logits  # (batch, frames, vocab)
 
-        # Greedy CTC decoding
+        # Greedy CTC decoding -> uroman tokens
         pred_ids = torch.argmax(logits, dim=-1)
-        hyp = processor.batch_decode(pred_ids)[0].strip()
+        hyp_roman = processor.batch_decode(pred_ids)[0].strip()
+        hyps_roman.append(hyp_roman)
 
-        ref = ds[i]["text"]
-
-        refs.append(ref)
-        hyps.append(hyp)
+        ref_dev = ds[i]["text"]
+        ref_roman = refs_roman[i]
 
         print(f"[MMS-ZS-BASIC] Sample {i}/{N}")
         print(f"PATH: {path}")
-        print(f"REF: {ref}")
-        print(f"HYP_MMS_ZS_BASIC: {hyp}\n")
+        print(f"REF_DEV: {ref_dev}")
+        print(f"REF_UROMAN: {ref_roman}")
+        print(f"HYP_MMS_UROMAN: {hyp_roman}\n")
 
-    wer_val = float(wer(refs, hyps))
-    cer_val = float(cer(refs, hyps))
+    wer_val = float(wer(refs_roman, hyps_roman))
+    cer_val = float(cer(refs_roman, hyps_roman))
 
-    print(f"[MMS-ZS-BASIC] WER: {wer_val}")
-    print(f"[MMS-ZS-BASIC] CER: {cer_val}")
+    print(f"[MMS-ZS-BASIC] WER (uroman): {wer_val}")
+    print(f"[MMS-ZS-BASIC] CER (uroman): {cer_val}")
 
     return {
-        "model": f"{MODEL_ID} (zeroshot-greedy)",
+        "model": f"{MODEL_ID} (zeroshot-greedy, uroman)",
         "wer": wer_val,
         "cer": cer_val,
         "n_samples": N,
@@ -107,15 +114,22 @@ def run_mms_zeroshot_baseline_basic(
 
 
 def main() -> None:
-    base_dir = Path(__file__).resolve().parent.parent / "data" / "hindi_audio"
+    repo_root = Path(__file__).resolve().parent.parent
+    base_dir = repo_root / "data" / "hindi_audio"
 
     loader = HFAudioLoader(target_sr=ASR_SAMPLING_RATE)
+    # Dataset with Devanagari references
     ds = loader.from_dir_with_text(
         str(base_dir),
-        str(base_dir / "transcriptions_uroman.txt"),
+        str(base_dir / "transcriptions.txt"),
     )
 
-    run_mms_zeroshot_baseline_basic(loader=loader, ds=ds)
+    # Romanized refs (uroman), aligned line-by-line
+    roman_path = base_dir / "transcriptions_uroman.txt"
+    with roman_path.open("r", encoding="utf-8") as f:
+        refs_roman = [ln.rstrip("\n") for ln in f]
+
+    run_mms_zeroshot_baseline_basic(loader=loader, ds=ds, refs_roman=refs_roman)
 
 
 if __name__ == "__main__":
