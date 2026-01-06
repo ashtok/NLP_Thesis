@@ -1,0 +1,26 @@
+{
+  "whisper_small": {
+    "model": "whisper-small",
+    "wer": 0.6710816777041942,
+    "cer": 0.3136672325976231,
+    "n_samples": 50,
+    "data_root": "/home/s472389/NLP_Thesis/data/hindi_audio",
+    "transcription_file": "transcriptions.txt"
+  },
+  "mms_1b_all_hin": {
+    "model": "facebook/mms-1b-all (hin)",
+    "wer": 0.41501103752759383,
+    "cer": 0.13879456706281834,
+    "n_samples": 50,
+    "data_root": "/home/s472389/NLP_Thesis/data/hindi_audio",
+    "transcription_file": "transcriptions.txt"
+  },
+  "mms_zeroshot_300m_uroman": {
+    "model": "mms-meta/mms-zeroshot-300m (zeroshot-greedy, uroman)",
+    "wer": 0.8366445916114791,
+    "cer": 0.42433315187806203,
+    "n_samples": 50,
+    "data_root": "/home/s472389/NLP_Thesis/data/hindi_audio",
+    "transcription_file": "transcriptions_uroman.txt"
+  }
+}
