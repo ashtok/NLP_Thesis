@@ -52,7 +52,7 @@ def main():
     results = {
         "whisper_small": whisper_res,
         "mms_1b_all_hin": mms_res,
-        "omniASR-CTC-300M_hin_Deva": omni_res,
+        #"omniASR-CTC-300M_hin_Deva": omni_res,
         "mms_zeroshot_300m_uroman": mms_zs_res,
     }
 
